@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+section {
+  padding: 100px 170px;
+}
+.main {
+  color: white;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(img/bg.png) no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main .content {
+  max-width: 800px;
+}
+.main .content h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+.main .content h2 span {
+  font-size: 2.5em;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.animated-text {
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+}
+.animated-text h3 {
+  color: #0202b8;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 1px;
+  font-family: "Ubuntu", sans-serif;
+}
+.animated-text h3:nth-child(1) {
+  animation-name: text-move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.animated-text h3 {
+  animation-name: couleur;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.btn {
+  animation-name: bg;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes couleur {
+  from {
+    color: #0202b8;
+  }
+  25% {
+    color: #5514a0;
+  }
+  50% {
+    color: rgb(107, 29, 180);
+  }
+  70% {
+    color: #5514a0;
+  }
+  to {
+    color: #0202b8;
+  }
+}
+@keyframes bg {
+  from {
+    background-color: #0202b8;
+  }
+  25% {
+    background-color: #5514a0;
+  }
+  50% {
+    background-color: rgb(107, 29, 180);
+  }
+  70% {
+    background-color: #5514a0;
+  }
+  to {
+    background-color: #0202b8;
+  }
+}
+
+@keyframes text-move {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -70px;
+  }
+  50% {
+    margin-top: -140px;
+  }
+  75% {
+    margin-top: -70px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.btn {
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #0202b8;
+  font-size: 1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.media-icon {
+  margin-top: 20px;
+  margin-left: 45px;
+}
+.media-icon a {
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+}
+.media-icon a :hover {
+  transform: scale(1.1);
+}
+
+header {
+  z-index: 999;
+  position: fixed;
+  transition: 0.5s ease;
+  width: 100%;
+  padding-top: 20px;
+}
+header .logo {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  float: left;
+  padding-left: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+}
+header .nav a {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+}
+header .nav a:hover {
+  font-weight: 500;
+  transform: scale(1.1);
+  font-weight: 600;
+}
+
+header.sticky {
+  background: #0202b8;
+  padding-top: 5px;
+  font-weight: 500;
+}
+
+/*about section */
+.about {
+  background-color: black;
+  padding-top: 100px;
+  max-height: 110vh;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  position: relative;
+  font-size: 2.2em;
+  font-weight: 500;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.section-title:before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  width: 100px;
+  height: 3px;
+  transform: translateX(-50%);
+  background-color: white;
+}
+.about .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  color: white;
+}
+.about .content .col-right {
+  position: relative;
+  width: 45%;
+}
+
+.about .content .col-left {
+  position: relative;
+  width: 50%;
+  margin-left: -5%;
+}
+.about .content .col-left .img {
+  position: relative;
+  width: 100%;
+}
+
+.about .content .col-left .img img {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+}
+.about .content .col-right h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.about .content .col-right p {
+  font-size: 1em;
+}
+.img {
+  animation: MoveUpDown 7s linear 2s infinite alternate;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    top: 0px;
+  }
+  50% {
+    top: 25px;
+  }
+}
+.skills {
+  background-color: rgb(24, 24, 24);
+  padding-top: 100px;
+  color: white;
+  margin-bottom: -50px;
+}
+.skills .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: -10px;
+}
+.skills .content .tech {
+  padding: 30px;
+  border-radius: 7px;
+  align-items: center;
+  background-color: black;
+  margin: 30px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+.skills .content .tech:hover {
+  transform: translateY(-15px);
+}
+.skills .content .tech .title {
+  margin-bottom: -100px;
+}
+.skills .content .tech img {
+  width: 80%;
+}
+.skills .content .tech p {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+.work {
+  padding-top: 100px;
+  background-color: black;
+  max-height: 110vh;
+}
+
+.work .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.work .content .card-img {
+  width: 300px;
+  margin: 15px;
+  margin-top: -10px;
+}
+
+.work .content .card-img img {
+  width: 300px;
+  position: relative;
+  height: 100%;
+  border-radius: 7px;
+  transition: 0.5s ease;
+}
+.work .content .card-img img:hover {
+  transform: scale(1.1);
+}
+
+.contact {
+  background-color: black;
+}
+.contact .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.contact .content .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.contact .content .row .card {
+  background-color: rgb(24, 24, 24);
+  color: black;
+  padding: 23px;
+  width: 240px;
+  margin: 40px;
+  border: 2px solid rgb(24, 24, 24);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .content .row .card .contact-icon {
+  color: #0202b8;
+  font-size: 3em;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+.contact-icon {
+  animation-name: couleur;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.contact .content .row .card .contact-icon:hover {
+  transform: translateY(-15px);
+}
+
+.contact .content .row .card .info {
+  text-align: center;
+  color: #fff;
+}
+.contact .content .row .card .info h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+.contact .content .row .card .info span {
+  font-weight: 500;
+  color: rgb(138, 130, 130);
+}
+.contact-form {
+  background-color: rgb(24, 24, 24);
+  max-width: 600px;
+  max-height: 600px;
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 7px;
+
+  color: rgb(255, 255, 255);
+}
+.contact-form h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contact-form .input-box {
+  margin-bottom: 20px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+  border-radius: 7px;
+  color: #111;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #111;
+  background-color: #f0f0f0;
+
+  resize: none;
+}
+.contact-form .input-box .send-btn {
+  color: #fff;
+  background: #0202b8;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.send-btn {
+  animation-name: bg;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.contact-form .input-box .send-btn:hover {
+  background: #4312f3;
+  font-size: 20px;
+}
+.footer {
+  background: #111111;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  background: url(img/footer.jpg);
+}
+
+.footer .footer-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 900px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  header.sticky {
+    padding: 10px 20px;
+  }
+
+  header .nav {
+    display: none;
+  }
+  header .nav.active {
+    z-index: 8888;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    right: 0;
+    width: 330px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    background-color: #000000;
+    transition: 0.3s ease;
+  }
+  header .nav a {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 200px;
+    font-family: "Ubuntu", sans-serif;
+  }
+  header .nav a:hover {
+    font-weight: 500;
+    transform: scale(1.1);
+    font-weight: 600;
+  }
+  .menu-btn {
+    position: absolute;
+    background: url(img/menu.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .menu-btn.active {
+    z-index: 9999;
+    background: url(img/close.png) no-repeat;
+    position: absolute;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  section {
+    padding: 100px 50px;
+  }
+  .main .content h2 span {
+    font-size: 2em;
+  }
+  .about .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title {
+    margin-bottom: 0px;
+  }
+  .about .content .col-right {
+    margin-top: 70px;
+    width: 100%;
+  }
+  .about {
+    max-height: 150vh;
+  }
+  .work .content {
+    margin-top: 100px;
+  }
+  .work .content .card-img {
+    margin-top: 20px;
+  }
+}
+.scrollToTop-btn {
+  z-index: 999;
+  position: fixed;
+  background: #0202b8;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 3px;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.scrollToTop-btn.active {
+  right: 20px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.reveal {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
