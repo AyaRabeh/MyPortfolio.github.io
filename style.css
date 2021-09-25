@@ -345,7 +345,6 @@ header.sticky {
 .contact .content {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -535,7 +534,10 @@ header.sticky {
     padding: 100px 50px;
   }
   .main .content h2 span {
-    font-size: 2em;
+    font-size: 55px;
+  }
+  .main .content h2 {
+    font-size: 25px;
   }
   .about .content .col-left .img {
     margin-left: -50%;
@@ -549,6 +551,10 @@ header.sticky {
   }
   .section-title {
     margin-bottom: 0px;
+    font-size: 30px;
+  }
+  .section-title:before {
+    width: 80px;
   }
   .about .content .col-right {
     margin-top: 70px;
@@ -562,6 +568,9 @@ header.sticky {
   }
   .work .content .card-img {
     margin-top: 20px;
+  }
+  .contact-form .input-box {
+    margin-bottom: 10px;
   }
 }
 .scrollToTop-btn {
